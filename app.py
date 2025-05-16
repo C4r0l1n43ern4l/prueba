@@ -2,7 +2,7 @@
 # Aquí va el código principal del prototipo agrícola con Streamlit
 # Una vez pegue el código completo aquí, podrá ejecutar: streamlit run app.py
 
-mlit as st
+import streamlit as st
 import pandas as pd
 import requests
 import firebase_admin
