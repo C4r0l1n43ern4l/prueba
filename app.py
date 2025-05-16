@@ -17,7 +17,7 @@ if not firebase_admin._apps:
 db = firestore.client()
 
 # --- Utilidades de Cifrado ---
-fernet = Fernet(st.secrets[1234"])
+fernet = Fernet(st.secrets[1234])
 
 # --- Autenticación ---
 def login():
