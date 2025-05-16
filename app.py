@@ -39,8 +39,8 @@ def login():
                 st.sidebar.error("Error al registrar")
 
     elif choice == "Iniciar Sesión":
-        email = st.sidebar.text_input("oscar@gmail.com")
-        password = st.sidebar.text_input("1234", type="password")
+        email = st.sidebar.text_input("Email")
+        password = st.sidebar.text_input("Contraseña", type="password")
         if st.sidebar.button("Iniciar"):
             try:
                 auth.get_user_by_email(email)
