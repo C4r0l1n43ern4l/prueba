@@ -12,12 +12,12 @@ import datetime
 
 # --- Inicialización Firebase ---
 if not firebase_admin._apps:
-    cred = credentials.Certificate(st.secrets[1234])
+    cred = credentials.Certificate(st.secrets["firebase_key"])
     firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 # --- Utilidades de Cifrado ---
-fernet = Fernet(st.secrets[1234])
+fernet = Fernet(st.secrets["firebase_key"])
 
 # --- Autenticación ---
 def login():
