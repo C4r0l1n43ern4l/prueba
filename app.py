@@ -12,7 +12,7 @@ import datetime
 
 # --- Inicialización Firebase ---
 if not firebase_admin._apps:
-    cred = credentials.Certificate(1234)
+    cred = credentials.Certificate(st.secrets["1234"])
     firebase_admin.initialize_app(cred)
 db = firestore.client()
 
